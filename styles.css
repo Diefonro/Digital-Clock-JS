@@ -1,22 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
-body{
-    min-height: 100%;
-    background: url(bcg.jpg);
-   
+body {
+  min-height: 100%;
+  background: url(bcg.jpg);
 }
 
-#clock{
+#clock {
+  font-family: "Roboto", sans-serif;
+  font-size: 6vw;
+  text-shadow: 1px 1px 2px #333;
+  color: #333;
+}
+
+.clock-container {
+  background-color: rgba(255, 255, 255, 0.445);
+  padding: 20px;
+  letter-spacing: 3vw;
+  max-width: 45%;
+  text-align: center;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+#date {
+  letter-spacing: 3vw;
+  font-size: 2.8vw;
+  text-shadow: 1px 1px 2px #333;
+}
+
+.animate {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  background-color: rgba(51, 51, 51, 0.234);
+}
+
+@media only screen and (min-width: 280px) and (max-device-width: 767px) {
+  #clock {
     font-family: "Roboto", sans-serif;
-    font-size: 6vw;
+    font-size: 1.5em;
     text-shadow: 1px 1px 2px #333;
     color: #333;
-}
-
-.clock-container{
+  }
+  .clock-container {
     background-color: rgba(255, 255, 255, 0.445);
     padding: 20px;
     letter-spacing: 3vw;
@@ -25,6 +54,7 @@ body{
     border-radius: 30px;
     margin: 0 auto;
     margin-top: 10%;
+  }
 }
 
 #date{
